@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@font-face {
+    font-family:"Disney" ;
+    src: url('../fontes/waltograph42.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --cor0: #EADFF2;
+    --cor1: #B18FBF;
+    --cor2: #A65390;
+    --cor3: #A63788;
+    --cor4: #8B2356;
+
+    --font-padrao:Arial, Helvetica, sans-serif;
+    --font-destaque:'Kaushan Script', cursive;
+    --font-segunda:'Disney',cursive;
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--cor0);
+    font-family: var(--font-padrao);
+
+}
+a.Externo::after{
+    content: '\00A0\1F517';
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+header > h1{
+    color: white;
+    font-family: var(--font-segunda);
+    font-size: 6em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.377);
+}
+header > p{
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 500px;
+    margin: auto;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.363);
+
+}
+nav{
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.199);
+}
+nav > a{
+    color: var(--cor0);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    animation-duration: 0.4s;
+    text-decoration: none;
+}
+nav > a:hover{
+    background-color: var(--cor1);
+    color: var(--cor4);
+    
+}
+main{
+    max-width: 800px;
+    min-width: 100px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.363);
+}
+main p > strong{
+    color: var(--cor4);
+}
+main > h1{
+    font-family: var(--font-segunda);
+    color: var(--cor3);
+    font-size: 2.8em;
+    font-weight: normal;
+    text-align: center;
+   
+}
+main > h2{
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+    color: var(--cor0);
+    text-indent: 8px;
+    font-weight: bold;
+    background-image: linear-gradient(to right,var(--cor4), transparent);
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+    
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor4);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+main a:hover{
+    background-color: var(--cor4);
+    color: var(--cor0);
+}
+main picture > source.pq{
+    max-width: 750px;
+    margin: auto;
+    display: block;
+    padding: 20px;
+}
+div.video{
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.6%;
+    position: relative;
+}
+div.video > iframe{
+    position: absolute;
+    top:5%;
+    left:5%;
+    width:90%;
+    height:90%;
+}
+aside{
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow:3px 3px 8px rgba(0, 0, 0, 0.356) ;
+}
+aside h3{
+    color: white;
+    text-align: center;
+    background-color: var(--cor4);
+    padding: 7px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    text-shadow: 1.5px 2px 0px rgba(0, 0, 0, 0.199);
+}
+aside ul{
+    list-style-type: '00A0';
+    list-style: inside;
+    columns: 4;
+    padding: 14px;
+}
+aside ul > li > abbr{
+    text-decoration: none;
+    color: var(--cor4);
+}
+aside ul > li > abbr:hover{
+    color: white;
+}
+footer{
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    font-size: 1.3;
+    padding: 5px;
+}
+footer a{
+    text-decoration: none;
+    color: var(--cor0);
+    font-weight: bold;
+}
+footer a:hover{
+    background-color: var(--cor1);
+    color: var(--cor4);
+    padding: 5px;
+}
